@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "Rajdhani-Regular";
+    src: url(fonts/Rajdhani-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Rajdhani-Bold";
+    src: url(fonts/Rajdhani-Bold.ttf);
+}
+
+
+@font-face {
+    font-family: "Rajdhani-Light";
+    src: url(fonts/Rajdhani-Light.ttf);
+}
+
+@font-face {
+    font-family: "Rajdhani-Medium";
+    src: url(fonts/Rajdhani-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Rajdhani-SemiBold";
+    src: url(fonts/Rajdhani-SemiBold.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani-Regular', sans-serif;
+    color: white;
+   
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('Images/navyforest.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap{
+    width: 420px;
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(2px);
+    padding: 40px 25px;
+    color: white;
+    box-shadow: 0px 0px 10px rgb(0, 255, 255, 0.5);
+     transition: border-color 0.3s, box-shadow 0.3s;
+}
+@keyframes color-change {
+    0% {
+        border-color: rgb(247, 255, 199);
+        box-shadow: 0px 0px 70px rgb(247, 255, 199);
+    }
+    50% {
+        border-color: rgb(0, 255, 255);
+        box-shadow: 0px 0px 70px rgb(0, 255, 255);
+    }
+    100% {
+        border-color: rgb(247, 255, 199);
+        box-shadow: 0px 0px 70px rgb(247, 255, 199);
+    }
+}
+
+.wrap {
+    animation: color-change 3s infinite linear;
+}
+
+.wrap h1{
+    font-family: Rajdhani-bold;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.wrap .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;    
+    position: relative;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+    opacity: 40%;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+}
+
+.wrap .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0px 15px;
+}
+
+.remember-forgot label input{
+    accent-color:  #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+   color: #fff;
+   text-decoration: none;
+   transition: text-shadow 0.5s ease-in-out; 
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ff00;
+}
+
+.wrap .btn{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 1.4em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: black;
+    font-weight: 600px;
+    font-family: rajdhani-bold;
+    margin-top: 20px;    
+}
+
+.wrap .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 0.54px;
+}
+
+.register-link p a{
+    color: white;
+    transition: text-shadow 0.5s ease-in-out; 
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6ff00;
+    font-weight: bold;
+}
